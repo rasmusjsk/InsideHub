@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InsideHub Party</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.3s; }
+    section:nth-of-type(2) { animation-delay: 0.6s; }
+    section:nth-of-type(3) { animation-delay: 0.9s; }
+    section:nth-of-type(4) { animation-delay: 1.2s; }
+    section:nth-of-type(5) { animation-delay: 1.5s; }
+    section:nth-of-type(6) { animation-delay: 1.8s; }
+    section:nth-of-type(7) { animation-delay: 2.1s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1590080876645-8852781f6d0c') center/cover no-repeat;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      animation: zoomIn 1.2s ease-out forwards;
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 10px #00d0ff);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #00d0ff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #00d0ff;
+      color: #000;
+      padding: 15px 30px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.3s;
+      box-shadow: 0 0 20px #00d0ff, 0 0 40px rgba(0, 208, 255, 0.3);
+    }
+
+    .btn:hover {
+      background-color: #ff6b4a;
+      color: #fff;
+      box-shadow: 0 0 25px #ff6b4a, 0 0 50px rgba(255, 107, 74, 0.3);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00d0ff;
+      text-shadow: 0 0 10px #00d0ff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="Insidehub_logo.png" alt="InsideHub Logo" class="logo" />
+    <h1>Can you sell this pen?<br />Then you definitely belong here.</h1>
+    <p>InsideHub Party — a private night for those who know how to play big.</p>
+    <button class="btn">Reserve your spot</button>
+  </section>
+
+  <section>
+    <h2>This is not just a party.</h2>
+    <p>This is a club for those who know the true value of moments, money, and real connections.<br /><br />InsideHub Night — an exclusive gathering of entrepreneurs, investors, and all those who always play on the winning side.</p>
+  </section>
+
+  <section>
+    <h2>Program of the Night</h2>
+    <ul>
+      <li>Poker Table — a game for the chosen ones (reservation required)</li>
+      <li>Premium buffet</li>
+      <li>3 DJ sets</li>
+      <li>Prize & privileges auction</li>
+      <li>Signature cocktail bar</li>
+      <li>Networking with people who don’t need an introduction</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Dress to impress.</h2>
+    <p>The boldest version of you.<br />Wear what reflects your status and your character.<br /><br />This night is for those who appreciate style and freedom.</p>
+  </section>
+
+  <section>
+    <h2>The game starts from €200</h2>
+    <p>Includes:</p>
+    <ul>
+      <li>Welcome drink</li>
+      <li>Premium buffet</li>
+      <li>Poker Table (by reservation)</li>
+      <li>DJ sets</li>
+      <li>Networking</li>
+      <li>Participation in the InsideHub Auction</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>InsideHub Auction</h2>
+    <p>A chance to win privileges, gifts, and personal discounts for InsideHub services.</p>
+  </section>
+
+  <section>
+    <h2>Limited spots available.<br />Only for the chosen ones.</h2>
+    <button class="btn">Reserve your spot</button>
+  </section>
+
+  <footer>
+    <p><strong>InsideHub</strong><br /><br />We create events you’ll never forget.<br />Follow our upcoming projects — and be where true emotions are born.</p>
+  </footer>
+</body>
+</html>
